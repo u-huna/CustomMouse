@@ -47,7 +47,7 @@
                 mouseCursor.style.top = e.pageY + "px";
                 mouseCursor.style.left = e.pageX + "px";
 
-                gsap.to(follow, { duration: 0.8, left: e.pageX - 15, top: e.pageY - 15 });
+                gsap.to(follow, { duration: 0.5, left: e.pageX - 15, top: e.pageY - 15 });
             }
             
             window.addEventListener("mousemove", myCursor);
@@ -112,9 +112,9 @@
         }
         
         .cursor_follow {
+        width: 35px;
+        height: 35px;
         position: absolute;
-        width: 30px;
-        height: 30px;
         background: rgba(139, 195, 55, 0.5);;
         border-radius: 50%;
         user-select: none;
